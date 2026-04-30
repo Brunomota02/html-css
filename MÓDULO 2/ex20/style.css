@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+  
+}
+
+div > p{
+    display: none;
+}
+
+div{
+    color: red;
+}
+
+div:hover > p {
+    display: block;
+    background-color: rgb(225, 75, 75);
+    width: 300px;
+    color: white;
+    
+
+
+}
+
+
+  body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            
+        
+        }
+
+     
+       
+        a{
+            color: darkred;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            
+        }
+        a:visited{
+            color: rgb(243, 112, 112);
+            
+        }
+        a:active{
+           color: yellow;
+        }
+
+
+
+
+
