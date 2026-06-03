@@ -10,8 +10,16 @@
         body{
             background-image: url(imagens/wallpaper002.jpg);
             background-repeat: no-repeat;
-            background-repeat: repeat-y;
+            background-size: cover;
             
+            
+            
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            
+
         }
 
         div.quadrado{
@@ -19,20 +27,23 @@
             width: 300px;
             height: 300px;
             border-radius: 10px;
-            display: inline-block;
+            margin: 15px;
+       
+            
         }
-           
-        div#eq1{
-            background-color: #b2b5b8;
-        }
-        div#eq2{
-            background-image: linear-gradient( to bottom , yellow , rgb(255, 136, 0));
-        }
+           div#eq1{
+            background-image: url(imagens/pattern002.png);
+            
+           }
 
-        div#eq3{
-            background-image: url('imagens/pattern003.png');
-        }
-
+            div#eq2{
+            background-image: url(imagens/pattern002.png);
+            
+           }
+           div#eq3{
+            background-image: url(imagens/pattern002.png); }
+       
+       
 
 
 
@@ -41,14 +52,11 @@
 </head>
 <body>
 
-    <div class="quadrado" id="eq1">
-
-    </div>
-    <div class="quadrado" id="eq2">
-
-    </div>
-    <div class="quadrado" id="eq3">
-
+    <div class="container">
+         <div class="quadrado" id="eq1"></div>
+         <div class="quadrado" id="eq1"></div>
+         <div class="quadrado" id="eq1">
+        </div>
     </div>
     
 </body>
