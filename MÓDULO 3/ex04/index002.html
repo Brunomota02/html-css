@@ -14,21 +14,46 @@
         }
         table{
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
+            
            
            
         }
         thead , tfoot{
-            background-color: gray;
+            background-color:#383838;
             color: white;
         }
 
+        thead > tr , th {
+            position: sticky;
+            background-color: #383838 ;
+            top:0;
+          
+        }
+
         td, th{
-            border: 2px solid black;
+            border:  1px solid black;;
             padding: 10px;
             
             
         }
+       tbody > tr:nth-child(odd) {
        
+        background-color: rgba(98, 101, 100, 0.34);
+        
+       }
+
+        td.num{
+            text-align: right;
+        }
+        caption{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding-bottom: 10px;
+            background-color: gainsboro;
+        }
 
        
 
@@ -41,54 +66,167 @@
     </style>
 </head>
 <body>
+     
+    <h1>Uso de Tabelas Grandes</h1>
 
+    <!--- TABLE 
+         CAPTION = LEGENDA DA TABELA
+
+
+          THEAD = CABEÇA = TD , TD , TH
+          TBODY = CORPO - TR, TD, TH
+          TFOOTY = RODAPE = TD , TD ,TH
+    -->
+
+    
 
     <table>
+        <caption>População das Unidades Federativas</caption>
 
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
              
             </tr>
            
         </thead>
 
+       
+
+
     <tbody> 
         <tr>
             <td>São Paulo</td>
-            <td>85.919.049</td>
+            <td class="num">85.919.049</td>
             
         
         </tr>
          
         <tr>
             <td>Minas Gerais</td>
-            <td> 21.471.025</td>
+            <td class="num"> 21.471.025</td>
         </tr>
         <tr>
             <td>Rio de Janeiro</td>
-            <td>17.264.943</td>
+            <td class="num">17.264.943</td>
         </tr>
+
+        <tr>
+            <td>Bahia</td>
+            <td class="num">14.874.943</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="num">13.224.943</td>
+        </tr>
+        <tr>
+            <td>Maranhão</td>
+            <td class="num">7.264.943</td>
+        </tr>
+        <tr>
+            <td>Amazonas</td>
+            <td class="num">6.114.943</td>
+        </tr>
+        <tr>
+            <td>Espírito Santo</td>
+            <td class="num">5.014.943</td>
+        </tr>
+        <tr>
+            <td>Paraíba</td>
+            <td class="num">4.264.943</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Norte</td>
+            <td class="num">3.264.943</td>
+        </tr>
+        <tr>
+            <td>Alagoas</td>
+            <td class="num">3.000.943</td>
+        </tr>
+        
+        <tr>
+            <td>Jundiaí</td>
+            <td class="num">111.443 221</td>
+        </tr>
+
+        <tr>
+            <td>Maringá</td>
+            <td class="num">111.413.486</td>
+        </tr>
+
+        <tr>
+            <td>Presidente Prudente</td>
+            <td class="num">555.551
+        </tr>
+         <tr>
+            <td>Itaboraí</td>
+            <td class="num">224 267</td>
+        </tr>
+
+         <tr>
+            <td>Cabo Frio</td>
+            <td class="num">222 161</td>
+        </tr>
+
+         <tr>
+            <td>Itabuna</td>
+            <td class="num">186 708</td>
+        </tr>
+
+         <tr>
+            <td>Cachoeiro de Itapemirim</td>
+            <td class="num">185 786</td>
+        </tr>
+
+         <tr>
+            <td>Jaraguá do Sul</td>
+            <td class="num">588.888.88</td>
+        </tr>
+
+         <tr>
+            <td>Guarapuava</td>
+            <td class="num">55.558.552</td>
+        </tr>
+
+         <tr>
+            <td>Ferraz de Vasconcelos</td>
+            <td class="num">888.888.999</td>
+        </tr>
+
+         <tr>
+            <td>Ilhéus</td>
+            <td class="num">88.888.999</td>
+        </tr>
+
+         <tr>
+            <td>Bragança Paulista</td>
+            <td class="num">282.657.699</td>
+        </tr>
+
+         <tr>
+            <td>Sinop</td>
+            <td class="num">811.111.555</td>
+        </tr>
+
 
 
      </tbody>
 
       
-     
-      
-        
-        <tfoot>
+       <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>00000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>450.810.053</strong></td>
 
 
             </tr>
 
 
         </tfoot>
-
+      
+        
+       
 
         
 
